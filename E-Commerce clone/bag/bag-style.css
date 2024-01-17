@@ -1,0 +1,410 @@
+.bag-items-container {
+  display: inline-block;
+  width: 64%;
+  padding-right: 20px;
+  border-right: 1px solid #eaeaec;
+  padding-top: 32px;
+  color: #282c3f;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+  
+.bag-page {
+  height: 450px;
+  /* max-height: 1000px; */
+  width: 75%;
+  margin-left: 12.5%;
+}
+  
+.bag-summary {
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  padding: 24px 0 0 16px;
+  color: #282c3f;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+  
+.bag-details-container {
+  margin-bottom: 16px;
+}
+  
+.price-header {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 24px 0 16px;
+  color: #535766;
+}
+  
+.price-item {
+  margin-bottom: 12px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #282c3f;
+}
+  
+.price-item-value {
+  float: right;
+}
+  
+.priceDetail-base-discount {
+  color: #03a685;
+}
+  
+.price-footer {
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 16px;
+  border-top: 1px solid #eaeaec;
+  color: #3e4152;
+  line-height: 16px;
+}
+  
+.btn-place-order {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  border-width: 0px;
+  padding: 10px 16px;
+  background: linear-gradient(145deg, #e32fff, #5948ff);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+  
+.bag-item-container {
+  margin-bottom: 8px;
+  background: #fff;
+  font-size: 14px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  position: relative;
+  padding: 12px 12px 0;
+}
+  
+.item-left-part {
+  position: absolute;
+  background: rgb(255, 242, 223);
+  height: 148px;
+  width: 111px;
+}
+  
+.item-right-part {
+  padding-left: 12px;
+  position: relative;
+  min-height: 148px;
+  margin-left: 111px;
+  margin-bottom: 12px;
+}
+  
+.bag-item-img {
+  width: 100%;
+}
+  
+.return-period {
+  display: inline-flex;
+  font-size: 14px;
+  padding-top: 8px;
+}
+  
+.return-period-days {
+  font-weight: 700;
+  margin-right: 4px;
+}
+  
+.delivery-details {
+  margin-top: 5px;
+  color: #282c3f;
+  font-size: 12px;
+  letter-spacing: -.1px;
+  margin-bottom: 8px;
+  line-height: 15px;
+}
+  
+.delivery-details-days {
+  color: #03a685;
+}
+  
+.remove-from-cart {
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  right: 18px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+*{
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+header{
+  background-color: #fff; 
+  height: 100px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  border-bottom: 1px solid #ccc5c5;
+}
+
+.myntra-home{
+  height: 60px; 
+  margin-top: 5px;
+}
+
+.logo-name{
+  font-size: 10px;
+  font-weight: 1000;
+  color: #5948ff;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.logo-container{
+  margin-left: 4%;
+  display: flex;
+}
+
+.action-bar{
+  margin-top: 20px;
+  margin-right: 4%;
+}
+
+.nav-bar{
+  display: flex; 
+  min-width: 500px; 
+  justify-content: space-evenly;
+}
+
+.nav-bar a{
+  font-size: 14px; 
+  color: #282c3f; 
+  font-weight: 700;
+  letter-spacing: 0.3px; 
+  text-transform: uppercase;
+  text-decoration: none; 
+  padding: 37px 0; 
+  border-bottom: 5px solid #fff;
+}
+
+.nav-bar a:hover{
+  border-bottom: 5px solid #5948ff;
+}
+
+.nav-bar a sup{
+  color: #e32fff; font-size: 10px;
+}
+
+.search-bar{
+  height: 40px; 
+  min-width: 200px; 
+  width: 30%;
+  display: flex; 
+  align-items: center; 
+}
+
+.search-icon{
+  height: 20px; 
+  padding: 10px; 
+  box-sizing: content-box;
+  background-color: #f5f5f6; 
+  color: #696e79; 
+  font-weight: 300;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-input{
+  height: 40px; 
+  background-color: #f5f5f6; 
+  color: #696e79;
+  flex-grow: 1; 
+  border: 0; 
+  border-radius: 0 4px 4px 0;
+}
+
+.action-bar{
+  display: flex; 
+  justify-content: space-evenly;
+  min-width: 200px;
+}
+
+.action-container{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Section */
+
+.banner-conatiner{
+  margin: 40px 0;    
+}
+
+.banner-image{
+  width: 100%;
+}
+
+.category-heading{
+  text-transform: uppercase; 
+  color: #3e4152;
+  letter-spacing: 0.15em; 
+  font-size: 1.8em; 
+  max-height: 5rem; 
+  font-weight: 700;
+  margin: 50px 0 10px 30px;
+}
+
+.category-item, .items-container{
+  width: 80%;
+  margin: 50px 10%;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+}
+
+.sale-item{
+  width: 250px;
+}
+
+.footer-container{
+  padding: 30px 0 40px 0;
+  background: #fafbfc;
+  display: flex; 
+  justify-content: space-evenly;
+  border-top: #5948ff;
+}
+
+.footer-column{
+  display: flex; 
+  flex-direction: column;
+}
+
+.footer-column h3{
+  color: #5948ff; 
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.footer-column a{
+  color: #5948ff;
+  font-size: 15px; 
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.copyright{
+  color: #94969f; 
+  text-align: end; 
+  padding: 15px;
+}
+
+.items-container{
+  width: 80%; 
+  margin: 40px 10%; 
+}
+
+.item-container{
+  width: 250px; 
+  margin: 8px;
+}
+
+.item-image{
+  width: 100%;
+}
+
+.rating{
+  font-size: 12px; 
+  font-weight: 700;
+}
+
+.comapny-name{
+  margin-top: 15px;
+  font-size: 16px; 
+  font-weight: 700; 
+  line-height: 1; 
+  color: #282c3f; 
+  margin-bottom: 6px; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+}
+
+.item-name{
+  color: #535766;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.price{
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #282c3f;
+  white-space: nowrap;
+}
+
+.current-price{
+  font-size: 16px;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.original-price{
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.discount{
+  color: #ff905a;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.btn-add-bag{
+  margin-top: 8px;
+  font-size: 18px;
+  width: 100%;
+  background-color: lightgreen;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bag-item-count{
+  background: linear-gradient(145deg, #e32fff, #5948ff);
+  white-space: nowrap;
+  text-align: center;
+  line-height: 18px;
+  padding: 0 6px;
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  left: 13px;
+  top: -44px;
+  font-weight: 700;
+  cursor: pointer;
+}

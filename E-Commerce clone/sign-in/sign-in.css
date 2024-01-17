@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+header{
+    background-color: #fff;
+    height: 80px;
+}
+
+.company-logo{
+    height: 60px;
+    margin-top: 18px;
+}
+
+.logo-name{
+    margin-top: 12px;
+    color: #5948ff;
+    font-size: 10px;
+    font-weight: 1000;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.items-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-container{
+    height: 400px;
+    width: 400px;
+    border: 4px solid #5948ff;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.sign-in{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.email{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.text{
+    margin-top: 5px;
+    height: 25px;
+    width: 346px;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+}
+
+.password{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.give-password{
+    margin-top: 5px;
+    height: 25px;
+    width: 346px;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+}
+
+.sign-in-button{
+    margin-left: 5px;
+    margin-top: 20px;
+    height: 40px;
+    width: 335px;
+    border: transparent;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #e32fff, #5948ff);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.terms{
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+.new-account{
+    margin-left: 5px;
+    margin-top: 20px;
+    height: 40px;
+    width: 335px;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    background: transparent;
+    font-weight: 500;
+    box-shadow: 2.5px 2.5px 2.5px 0px rgb(199, 199, 199);
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #fafbfc;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(155, 155, 155);
+    font-size: 12px;
+}
+
+.copyright{
+    font-size: 13px;
+    margin-top: 12px;
+    text-align: center;
+    color: rgb(107, 107, 107);
+}
